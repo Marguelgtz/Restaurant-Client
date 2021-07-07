@@ -5,11 +5,16 @@ function MainMenu() {
     <div>
       {/* 
       Main Cointainer
-        Top Bar 
-        Top Bowls Container 
-          Bowl1 Bowl 2
-        Signature Bowls 
-          MenuItem
+        Top Container
+          Top Bar 
+        MenuContainer
+          Top Bowls Container 
+            Bowl1 Bowl 2
+          Signature Bowls 
+            MenuItem
+          Entradas 
+            MenuItem
+        Custom Order Button
     */}
     </div>
   );
