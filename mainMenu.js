@@ -8,30 +8,56 @@ const TopBar = styled``;
 const MenuContainer = styled``;
 
 const TopMenuContainer = styled``;
-const TopItemCont = styled``;
+const TopItem = styled``;
 const MiddleMenuContainer = styled``;
 const MenuItem = styled``;
 const BottomMenucontainer = styled``;
 const CustomOrderBottom = styled``;
+const Title = styled``;
 
-function MainMenu() {
+/* 
+Main Cointainer
+  Top Container
+    Top Bar 
+  MenuContainer
+    Top Bowls Container 
+      Bowl1 Bowl 2
+    Signature Bowls 
+      MenuItem
+    Entradas 
+      MenuItem
+  Custom Order Button
+*/
+
+const MainMenu = () => {
   return (
-    <div>
-      {/* 
-      Main Cointainer
-        Top Container
-          Top Bar 
-        MenuContainer
-          Top Bowls Container 
-            Bowl1 Bowl 2
-          Signature Bowls 
-            MenuItem
-          Entradas 
-            MenuItem
-        Custom Order Button
-    */}
-    </div>
+    <MainContainer>
+      <TopContainer>
+        <TopBar>{/* Menu */}</TopBar>
+        <MenuContainer>
+          <TopMenuContainer>
+            <Title>Title</Title>
+            {/*
+          ARRAY.foreach(product => <TopItem product= {product} />)
+          */}
+          </TopMenuContainer>
+          <MiddleMenuContainer>
+            <Title>Title</Title>
+            {/*
+          ARRAY.foreach(product => <MenuItem product= {product} >)
+          */}
+          </MiddleMenuContainer>
+          <BottomMenucontainer>
+            <Title>Title</Title>
+            {/*
+          ARRAY.foreach(product => <MenuItem product= {product} >)
+          */}
+          </BottomMenucontainer>
+        </MenuContainer>
+      </TopContainer>
+      <CustomOrderBottom />
+    </MainContainer>
   );
-}
+};
 
 export default MainMenu;
